@@ -297,9 +297,7 @@ Esta separación facilita mantener el código, realizar cambios sin efectos cola
 
 Aquí irán las capturas que muestran la interfaz funcionando:
 
-- **Vista principal (Index):** Muestra la lista completa de instrumentos con estado, cantidad, y botones de control.
-- **Vista de creación:** Formulario para agregar un nuevo instrumento con campos de título y cantidad.
-- **Edición inline:** Demostración de cómo editar un título directamente desde la lista sin navegar.
+
 
 ---
 
@@ -309,7 +307,6 @@ Para ejecutar la aplicación en tu máquina:
 
 ### Requisitos previos
 - **.NET 8 o posterior** instalado en tu sistema
-- **Git** (opcional, para clonar el repositorio)
 
 ### Pasos para ejecutar
 
@@ -338,14 +335,6 @@ dotnet run
 5. **Navega a la funcionalidad principal**:
    - Dirígete a `/Instrumentos` en tu navegador
    - Verás la lista de instrumentos y podrás empezar a crear, editar, confirmar y eliminar ítems
-
-### Modo de desarrollo (con auto-recargar)
-
-Si deseas que la aplicación se recompile automáticamente al hacer cambios en el código:
-
-```powershell
-dotnet watch run
-```
 
 ### Detener la aplicación
 
