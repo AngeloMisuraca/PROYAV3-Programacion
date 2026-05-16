@@ -1,0 +1,305 @@
+/* ── Reset básico ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #2d3748;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+/* ── Header ── */
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+header a {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* ── Contenedor ── */
+.container {
+    max-width: 700px;
+    margin: 2rem auto;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+    overflow: hidden;
+}
+.container-sm { max-width: 480px; padding: 2.5rem; }
+
+/* ── Cabecera del Carrito ── */
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    border-bottom: 3px solid #e53e3e;
+    color: white;
+}
+
+.header-content h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.cart-count {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+/* ── Lista del Carrito ── */
+.cart-list { list-style: none; }
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 2rem;
+    border-bottom: 1px solid #e2e8f0;
+    transition: all 0.2s ease;
+    background: white;
+}
+
+.cart-item:hover {
+    background: #f8f9ff;
+    transform: translateX(4px);
+    box-shadow: inset 3px 0 0 #667eea;
+}
+
+.cart-item:last-child { border-bottom: none; }
+
+.cart-item.added {
+    background: #f0fdf4;
+    opacity: 0.8;
+}
+
+.cart-item.added .item-badge {
+    color: #22c55e;
+    font-weight: bold;
+}
+
+.item-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+}
+
+.item-badge {
+    font-size: 1.2rem;
+    color: #cbd5e0;
+    font-weight: bold;
+    min-width: 24px;
+    text-align: center;
+}
+
+.item-title {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #2d3748;
+}
+
+.item-quantity {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.25rem;
+    padding: 0.25rem 0.55rem;
+    border-radius: 999px;
+    background: #edf2f7;
+    color: #4a5568;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.item-actions {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.rename-form {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.rename-form input {
+    width: 9rem;
+    padding: 0.45rem 0.6rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    outline: none;
+}
+
+.rename-form input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* ── Vacío ── */
+.empty {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: #a0aec0;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* ── Botones ── */
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: none;
+    background: #edf2f7;
+    color: #2d3748;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.btn:hover {
+    background: #e2e8f0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #5568d3 0%, #653a8a 100%);
+    box-shadow: 0 6px 12px rgba(102, 126, 234, 0.3);
+}
+
+.btn-check {
+    background: #22c55e;
+    color: white;
+    padding: 0.4rem 0.7rem;
+    font-size: 0.8rem;
+    border-radius: 6px;
+}
+
+.btn-check:hover {
+    background: #16a34a;
+    box-shadow: 0 4px 8px rgba(34, 197, 94, 0.3);
+}
+
+.btn-quantity {
+    background: #4f46e5;
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    line-height: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 6px;
+}
+
+.btn-quantity:hover {
+    background: #4338ca;
+    box-shadow: 0 4px 8px rgba(79, 70, 229, 0.3);
+}
+
+.btn.disabled {
+    opacity: 0.45;
+    pointer-events: none;
+}
+
+.btn-remove {
+    background: #ef4444;
+    color: white;
+    padding: 0.4rem 0.7rem;
+    font-size: 0.8rem;
+    border-radius: 6px;
+}
+
+.btn-remove:hover {
+    background: #dc2626;
+    box-shadow: 0 4px 8px rgba(239, 68, 68, 0.3);
+}
+
+.btn-update {
+    background: #f59e0b;
+    color: white;
+    padding: 0.4rem 0.7rem;
+    font-size: 0.8rem;
+    border-radius: 6px;
+}
+
+.btn-update:hover {
+    background: #d97706;
+    box-shadow: 0 4px 8px rgba(245, 158, 11, 0.3);
+}
+
+/* ── Formulario ── */
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.form-group { margin-bottom: 1.5rem; }
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+    font-size: 0.95rem;
+    color: #2d3748;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.2s ease;
+    background: #f9fafb;
+}
+
+.form-group input:focus {
+    border-color: #667eea;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-actions { display: flex; gap: 0.7rem; margin-top: 2rem; }
+
+.validation-error {
+    margin-bottom: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    background: #fee2e2;
+    color: #991b1b;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.validation-error-list {
+    margin: 1rem 2rem 0;
+}

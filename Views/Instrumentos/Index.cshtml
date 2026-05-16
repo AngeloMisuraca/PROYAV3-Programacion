@@ -1,0 +1,56 @@
+@model List<TodoMVC.Models.Instrumento>
+
+@{
+    ViewData["Title"] = "Mi Carrito";
+}
+
+<div class="container">
+    <div class="card-header">
+        <div class="header-content">
+            <h1>Mi Carrito de Instrumentos</h1>
+            <p class="cart-count">@Model.Count instrumento(s)</p>
+        </div>
+        <a href="/Instrumentos/Crear" class="btn btn-primary">+ Agregar aquí</a>
+    </div>
+
+    @if (ViewBag.Error != null)
+    {
+        <p class="validation-error validation-error-list">@ViewBag.Error</p>
+    }
+
+    @if (Model.Count == 0)
+    {
+        <p class="empty">🎵 Tu carrito está vacío. ¡Agrega instrumentos!</p>
+    }
+    else
+    {
+        <ul class="cart-list">
+            @foreach (var instrumento in Model)
+            {
+                <li class="cart-item @(instrumento.Completada ? "added" : "")">
+                    <div class="item-content">
+                        <span class="item-badge">@(instrumento.Completada ? "✓" : "○")</span>
+                        <span class="item-title">@instrumento.Titulo</span>
+                        <span class="item-quantity">@instrumento.Cantidad</span>
+                    </div>
+                    <div class="item-actions">
+                        @if (!instrumento.Completada)
+                        {
+                            <a href="/Instrumentos/CambiarCantidad/@instrumento.Id?cambio=-1"
+                               class="btn btn-quantity @(instrumento.Cantidad <= 1 ? "disabled" : "")"
+                               title="Restar cantidad">-</a>
+                            <a href="/Instrumentos/CambiarCantidad/@instrumento.Id?cambio=1" class="btn btn-quantity" title="Sumar cantidad">+</a>
+                            <a href="/Instrumentos/Completar/@instrumento.Id" class="btn btn-check" title="Confirmar agregación">✓</a>
+                        }
+                        <a href="/Instrumentos/Eliminar/@instrumento.Id" class="btn btn-remove"
+                           onclick="return confirm('¿Remover este instrumento?')">✕</a>
+                        <form method="post" action="/Instrumentos/UpdateTitulo/@instrumento.Id" class="rename-form">
+                            <input type="text" name="titulo" placeholder="@instrumento.Titulo" required />
+                            <button type="submit" class="btn btn-update">Renombrar</button>
+                        </form>
+                    </div>
+                </li>
+            }
+        </ul>
+    }
+</div>

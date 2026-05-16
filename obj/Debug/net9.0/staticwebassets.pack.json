@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/marc/Downloads/TodoMVC-2/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.TodoMVC.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.TodoMVC.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.build.TodoMVC.props",
+      "PackagePath": "build\\TodoMVC.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.TodoMVC.props",
+      "PackagePath": "buildMultiTargeting\\TodoMVC.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.TodoMVC.props",
+      "PackagePath": "buildTransitive\\TodoMVC.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,125 @@
+{
+  "Version": 1,
+  "Hash": "AxhMSKluqrGKfaNH5/up8zEMnJ/vW6cX2bysuVl7Haw=",
+  "Source": "TodoMVC",
+  "BasePath": "_content/TodoMVC",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "TodoMVC/wwwroot",
+      "Source": "TodoMVC",
+      "ContentRoot": "/Users/marc/Downloads/TodoMVC-2/wwwroot/",
+      "BasePath": "_content/TodoMVC",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/marc/Downloads/TodoMVC-2/wwwroot/css/site.css",
+      "SourceId": "TodoMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/marc/Downloads/TodoMVC-2/wwwroot/",
+      "BasePath": "_content/TodoMVC",
+      "RelativePath": "css/site#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pvt4fdlmcw",
+      "Integrity": "RQNQ/z3Hts5upb/n800EbY5WytS9wWrjdon5uoL6i5A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/site.css"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "css/site.css",
+      "AssetFile": "/Users/marc/Downloads/TodoMVC-2/wwwroot/css/site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2798"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RQNQ/z3Hts5upb/n800EbY5WytS9wWrjdon5uoL6i5A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 13 May 2026 18:53:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RQNQ/z3Hts5upb/n800EbY5WytS9wWrjdon5uoL6i5A="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.pvt4fdlmcw.css",
+      "AssetFile": "/Users/marc/Downloads/TodoMVC-2/wwwroot/css/site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2798"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RQNQ/z3Hts5upb/n800EbY5WytS9wWrjdon5uoL6i5A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 13 May 2026 18:53:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pvt4fdlmcw"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RQNQ/z3Hts5upb/n800EbY5WytS9wWrjdon5uoL6i5A="
+        }
+      ]
+    }
+  ]
+}

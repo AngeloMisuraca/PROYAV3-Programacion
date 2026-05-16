@@ -1,0 +1,27 @@
+@model TodoMVC.Models.Instrumento
+
+@{
+    ViewData["Title"] = "Agregar Instrumento";
+}
+
+<div class="container container-sm">
+    <h1>🎵 Agregar Instrumento</h1>
+
+    @if (ViewBag.Error != null)
+    {
+        <p class="validation-error">@ViewBag.Error</p>
+    }
+
+    <form method="post" action="/Instrumentos/Crear">
+        <div class="form-group">
+            <label for="Titulo">Nombre del instrumento</label>
+            <input type="text" id="Titulo" name="Titulo" placeholder="ej: Guitarra acústica, Teclado, Batería" autofocus
+                   required />
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Agregar al carrito</button>
+            <a href="/Instrumentos" class="btn">Cancelar</a>
+        </div>
+    </form>
+</div>
