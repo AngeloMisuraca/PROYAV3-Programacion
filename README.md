@@ -295,9 +295,11 @@ Esta separación facilita mantener el código, realizar cambios sin efectos cola
 
 ## 5. Capturas de pantalla
 
-Aquí irán las capturas que muestran la interfaz funcionando:
+Aquí las capturas que muestran la interfaz funcionando:
 
+<img width="767" height="557" alt="image" src="https://github.com/user-attachments/assets/bd312ed5-a845-4b2e-95ab-fe5a1ce85921" />
 
+<img width="576" height="415" alt="image" src="https://github.com/user-attachments/assets/1f21c242-e4d1-49d2-a16b-e902ee9433b4" />
 
 ---
 
